@@ -10,6 +10,9 @@ const Login = lazy(() => import('./components/auth/Login'));
 const Register = lazy(() => import('./components/auth/Register'));
 const Home = lazy(() => import('./components/landing/Home'));
 
+function WelcomeMessage() {
+  return <p>Welcome My Name is!</p>
+}
 function App() {
   return (
     <SiteContainer>
@@ -39,10 +42,12 @@ function App() {
                 </Suspense>
               </Route>
 
-
               <Route path="/" exact>
                 <Suspense fallback={<Section />}>
-                  <Home />
+                  <Home       />
+                  <WelcomeMessage />
+                  <input type="text" />
+                  <button>Become an Insurer</button>
                 </Suspense>
               </Route>
 

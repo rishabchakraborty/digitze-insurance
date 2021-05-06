@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <Nav>
       <Link href="/">
-        <NavTab>Brand</NavTab>
+        <NavTab>Digitize.insurance</NavTab>
       </Link>
       <NavTabs>
         <NavTab>{username}</NavTab>
